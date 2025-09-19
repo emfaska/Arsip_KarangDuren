@@ -4,7 +4,7 @@
     </a>
 </p>
 
-<h2 align="center">Aplikasi Karang Duren</h2>
+<h2 align="center">Sistem Kearsipan Desa</h2>
 
 <p align="center">
     <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
@@ -15,48 +15,45 @@
 
 ---
 
-# Tujuan
-Aplikasi Arsip Karangduren dibuat untuk mempermudah pengelolaan dokumen dan surat masuk/keluar, termasuk penyimpanan, pencarian, pengarsipan, serta pengunduhan file surat dalam format PDF.
+# Tujuan Proyek
+Sistem kearsipan ini dikembangkan untuk menyederhanakan proses pengelolaan dan penyimpanan dokumen serta surat-menyurat di lingkungan desa, mencakup fitur pencarian, penyimpanan, dan pengunduhan file dalam format digital.
 
-# Fitur
-Manajemen Arsip
-- Pencarian Surat
-  Cari surat berdasarkan judul menggunakan search bar.
-- Tambah Surat
-  Input data surat baru dengan pilihan kategori (Undangan, Pengumuman, Nota Dinas, Pemberitahuan) dan upload file PDF.
-- Edit Surat
-  Ubah data surat beserta kategori dan file PDF.
-- Hapus Surat
-  Hapus data surat dengan konfirmasi terlebih dahulu.
-- Unduh Surat
-  Download file surat dalam format PDF.
-- Lihat Detail Surat
-  Menampilkan detail surat beserta file PDF.
-# Manajemen Kategori Surat
-- Tambah / Edit / Hapus Kategori Surat
-  Tambah, edit, atau hapus kategori surat dengan ID otomatis.
-- Halaman About
-  Menampilkan foto pembuat, nama, NIM, dan tanggal pembuatan aplikasi.
+---
 
-# Cara Menjalankan
-- Clone repository ini:
-  git clone https://github.com/divaadl/karangduren-arsip
-- Masuk ke folder project:
-  cd karangduren-arsip
-- Install dependensi Laravel:
-  composer install
-- Copy file .env.example menjadi .env:
-  cp .env.example .env
-- Generate application key:
-  php artisan key:generate
-- Buat symlink untuk file storage:
-  php artisan storage:link
-- Migrate database:
-  php artisan migrate
-- Jalankan aplikasi:
-  php artisan serve
+# Fungsionalitas
+### Manajemen Dokumen
+- **Pencarian Dokumen**: Temukan dokumen dengan cepat melalui kata kunci pada judulnya.
+- **Input Dokumen**: Tambahkan data dokumen baru dengan mengunggah file PDF dan memilih kategori yang tersedia.
+- **Modifikasi Dokumen**: Perbarui data, kategori, dan file PDF dari dokumen yang sudah ada.
+- **Penghapusan Dokumen**: Hapus data dokumen dengan konfirmasi keamanan.
+- **Pengunduhan Dokumen**: Unduh file dokumen dalam format PDF.
+- **Tampilan Detail Dokumen**: Lihat informasi lengkap dari sebuah dokumen beserta pratinjau file PDF-nya.
 
-# Dokumentasi
+---
+
+### Kategori Dokumen
+- **Manajemen Kategori**: Buat, edit, dan hapus kategori dokumen dengan ID yang dibuat secara otomatis.
+
+---
+
+### Informasi Pengembang
+- **Halaman Pengantar**: Menampilkan informasi tentang pengembang aplikasi serta tanggal penyelesaiannya.
+
+---
+
+# Petunjuk Penggunaan
+- **Kloning Repositori**: `git clone https://github.com/emfaska/Arsip_KarangDuren.git`
+- **Akses Direktori Proyek**: `cd karangduren-arsip`
+- **Instalasi Dependensi**: `composer install`
+- **Konfigurasi Lingkungan**: `cp .env.example .env`
+- **Pembuatan Kunci Aplikasi**: `php artisan key:generate`
+- **Pengaturan Tautan Penyimpanan**: `php artisan storage:link`
+- **Migrasi Database**: `php artisan migrate`
+- **Menjalankan Aplikasi**: `php artisan serve`
+
+---
+
+# Tampilan Aplikasi
 ### 1. Halaman Utama Arsip
 ![Dashboard](public/images/dashboard.png)
 
@@ -84,5 +81,5 @@ Manajemen Arsip
 ### 9. Halaman Hapus Kategori
 ![Hapus Kategori](public/images/hapus_kategori.png)
 
-### 10. Halaman About
+### 10. Halaman Tentang Aplikasi
 ![About](public/images/about.png)
